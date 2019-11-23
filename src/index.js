@@ -10,8 +10,7 @@ import Main from "views/Main.jsx";
 ReactDOM.render(
   <BrowserRouter>
     <Switch>
-      <Route path="/main" render={props => <Main {...props} />} />
-      <Redirect from="/" to="/main" />
+      <Route path="/" render={props => <Main {...props} />} />
     </Switch>
   </BrowserRouter>,
   document.getElementById("root")
